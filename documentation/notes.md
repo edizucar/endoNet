@@ -6,3 +6,4 @@ We use [nnUNet](https://github.com/MIC-DKFZ/nnUNet).
 - Testing using [Breast Cancer Dataset](https://www.kaggle.com/datasets/aryashah2k/breast-ultrasound-images-dataset)
 - We need to be very careful about [dataset format](https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/dataset_format.md) its really easy to do it wrong.
 - We are using the [hippocampus set](http://medicaldecathlon.com/) to help teach us the formatting. BUT it is in the old format. See [this tool](https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/convert_msd_dataset.md) also on how to convert an MSD dataset.
+- nnUNet allows one to classify medical images into different categories. It does this based on an image segmentation. Each categories requires a set of example images and given masks (to describe the segments) in order to train the network.
